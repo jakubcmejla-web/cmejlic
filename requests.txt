@@ -1,0 +1,2 @@
+# Paste YouTube links here, one per line, and commit.
+# GitHub will fetch the transcripts into transcripts/ automatically.
