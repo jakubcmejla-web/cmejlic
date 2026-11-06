@@ -129,7 +129,7 @@ def group_paragraphs(lines: list[tuple[float, str]], every: float = 30.0) -> lis
 
 def process(vid: str) -> bool:
     out = OUT / f"{vid}.md"
-    if out.exists():
+    if out.exists() and "No transcript could be fetched" not in out.read_text(encoding="utf-8"):
         print(f"- {vid}: already done, skipping")
         return True
     print(f"- {vid}: fetching")
